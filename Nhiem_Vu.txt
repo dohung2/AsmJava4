@@ -1,0 +1,35 @@
+**************************************************************
+**                      NHIỆM VỤ                            **
+- Ngọc: Dịch tiếng việt.
+- Hùng: Cắt trang.
+
+- CSDL: cùng làm.
+- Chọn lọc ảnh và thêm dữ liệu vào bảng.
+**************************************************************
+- cold
+#14279B
+
+- white
+#D4ECDD
+#DFF6F0
+#DDF5F7
+
+- blue
+#BAE8E8
+#6BC5D2
+#B4F1F1
+
+- Trang web chính
++ Home Header Fixed
++ My Account
++ Standart Forms
++ About
++ Menu MAN
+--------------------------
++ Product List
++ Product Page
+--------------------------
++ Shopping Cart
+--------------------------
++ Checkout
+
