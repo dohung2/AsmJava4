@@ -1,0 +1,188 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<!DOCTYPE html>
+<!--
+Template: Metronic Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
+Version: 1.0.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+  <meta charset="utf-8">
+  <title>Đăng ký | H&amp;N</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta content="Metronic Shop UI description" name="description">
+  <meta content="Metronic Shop UI keywords" name="keywords">
+  <meta content="keenthemes" name="author">
+
+  <meta property="og:site_name" content="-CUSTOMER VALUE-">
+  <meta property="og:title" content="-CUSTOMER VALUE-">
+  <meta property="og:description" content="-CUSTOMER VALUE-">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+  <meta property="og:url" content="-CUSTOMER VALUE-">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Fonts START -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <!-- Fonts END -->
+
+    <%@include file="common/head.jsp"%>
+  
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="ecommerce">
+    
+    <%@include file="common/header.jsp"%>
+    
+    <div class="main">
+      <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.jsp">Trang chủ</a></li>
+            <li class="active">Đăng ký</li>
+        </ul>
+        <!-- BEGIN SIDEBAR & CONTENT -->
+        <div class="row margin-bottom-40">
+          <!-- BEGIN SIDEBAR -->
+          <div class="sidebar col-md-3 col-sm-3">
+            <ul class="list-group margin-bottom-25 sidebar-menu">
+              <li class="list-group-item clearfix"><a href="shop-account.jsp"><i class="fa fa-angle-right"></i> Thông tin tài khoản</a></li>
+              <li class="list-group-item clearfix"><a href="shop-sign-up.jsp"><i class="fa fa-angle-right"></i> Chỉnh sửa thông tin</a></li>
+              <li class="list-group-item clearfix"><a href="shop-shopping-cart.jsp"><i class="fa fa-angle-right"></i> Giỏ hàng</a></li>
+              <li class="list-group-item clearfix"><a href="#"><i class="fa fa-angle-right"></i> Lịch sử mua hàng</a></li>
+              <li class="list-group-item clearfix"><a href="#"><i class="fa fa-angle-right"></i> Thẻ giảm giá</a></li>
+            </ul>
+          </div>
+          <!-- END SIDEBAR -->
+
+          <!-- BEGIN CONTENT -->
+          <div class="col-md-9 col-sm-7">
+            <h1>Thông tin đăng ký</h1>
+            <div class="content-form-page">
+              <form role="form" class="form-horizontal form-without-legend">
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="username">Tài khoản <span class="require">*</span></label>
+                  <div class="col-lg-8">
+                    <input type="text" id="username" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="password">Mật khẩu <span class="require">*</span></label>
+                  <div class="col-lg-8">
+                    <input type="text" id="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="first-name">Họ và tên <span class="require">*</span></label>
+                  <div class="col-lg-8">
+                    <input type="text" id="first-name" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="telephone">Số điện thoại <span class="require">*</span></label>
+                  <div class="col-lg-8">
+                    <input type="text" id="telephone" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="email">E-Mail </label>
+                  <div class="col-lg-8">
+                    <input type="text" id="email" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label" for="address">Địa chỉ <span class="require">*</span></label>
+                  <div class="col-lg-8">
+                    <input type="text" id="address" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label" for="region-state-dd">Tỉnh thành <span class="require">*</span></label>
+                  <div class="col-md-8">
+                    <select class="form-control" id="region-state-dd">
+                      <option value=""> --- Vui lòng chọn --- </option>
+                      <option value="hcm">HỒ CHÍ MINH</option>
+                      <option value="cantho">CẦN THƠ</option>
+                      <option value="danang">ĐÀ NẴNG</option>
+                      <option value="hanoi">HÀ NỘI</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">Nghề nghiệp <span class="require">*</span></label>
+                  <div class="col-lg-8 radio-list">
+                    <label>
+                      <input type="radio" name="CashOnDelivery" value="CashOnDelivery"> Học sinh/sinh viên
+                    </label>
+                    <label>
+                      <input type="radio" name="CashOnDelivery" value="CashOnDelivery"> Đi làm
+                    </label>
+                    <label>
+                      <input type="radio" name="CashOnDelivery" value="CashOnDelivery"> Khác
+                    </label>
+                  </div>
+                </div>
+                <div class="checkbox pull-left" style="margin-left: 15.5%;">
+                  <label>
+                    <input type="checkbox"> Tôi đã đọc và đồng ý các điều khoản trên <a title="Terms & Conditions" href="javascript:;">Điều khoản & Điều kiện </a> &nbsp;&nbsp;&nbsp; 
+                  </label>
+                </div> 
+                <div class="row">
+                  <div class="col-lg-8 col-md-offset-2 padding-left-0 padding-top-20">
+                    <button class="btn btn-primary" type="submit">Đăng ký</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- END CONTENT -->
+        </div>
+        <!-- END SIDEBAR & CONTENT -->
+      </div>
+    </div>
+
+    <%@include file="common/footer.jsp"%>
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS(REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>  
+    <![endif]-->  
+    
+    <%@include file="common/footer.jsp"%>
+    
+    <script src="<c:url value='/views/web/assets/plugins/uniform/jquery.uniform.min.js'/>" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();    
+            Layout.initOWL();
+            Layout.initTwitter();
+            Layout.initImageZoom();
+            Layout.initTouchspin();
+            Layout.initUniform();
+        });
+    </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
