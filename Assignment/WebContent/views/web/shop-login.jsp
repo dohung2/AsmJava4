@@ -54,7 +54,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="${pageContext.request.contextPath}/index"><img src="img/logos/shop-logo.png" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="${pageContext.request.contextPath}/index"><img src="<c:url value='/views/web/img/logos/shop-logo.png'/>" alt="Metronic Shop UI"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -154,13 +154,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
-                        <ul>
-                          <li><a href="shop-product-list.jsp"><img title="hermes" alt="hermes" src="img/brands/hoimet.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="nike" alt="nike" src="img/brands/nike.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="adidas" alt="adidas" src="img/brands/adidas.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="puma" alt="puma" src="img/brands/puma.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="dior" alt="dior" src="img/brands/dior.jpg"></a></li>
-                        </ul>
+                        <%@include file="common/brands.jsp"%>
                       </div>
                     </div>
                   </div>
@@ -219,13 +213,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
-                        <ul>
-                          <li><a href="shop-product-list.jsp"><img title="hermes" alt="hermes" src="img/brands/hoimet.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="nike" alt="nike" src="img/brands/nike.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="adidas" alt="adidas" src="img/brands/adidas.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="puma" alt="puma" src="img/brands/puma.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="dior" alt="dior" src="img/brands/dior.jpg"></a></li>
-                        </ul>
+                        <%@include file="common/brands.jsp"%>
                       </div>
                     </div>
                   </div>
@@ -283,13 +271,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
-                        <ul>
-                          <li><a href="shop-product-list.jsp"><img title="hermes" alt="hermes" src="img/brands/hoimet.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="nike" alt="nike" src="img/brands/nike.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="adidas" alt="adidas" src="img/brands/adidas.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="puma" alt="puma" src="img/brands/puma.jpg"></a></li>
-                          <li><a href="shop-product-list.jsp"><img title="dior" alt="dior" src="img/brands/dior.jpg"></a></li>
-                        </ul>
+                        <%@include file="common/brands.jsp"%>
                       </div>
                     </div>
                   </div>
@@ -304,7 +286,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </a>
                 
               <ul class="dropdown-menu">
-                <li class="active"><a href="shop-login.jsp">Đăng nhập</a></li>
+                <li class="active"><a href="${pageContext.request.contextPath}/sign-in">Đăng nhập</a></li>
                 <li><a href="shop-account.jsp">Thông tin tài khoản</a></li>
                 <li><a href="shop-sign-up.jsp">Đăng ký</a></li>
               </ul>
@@ -345,10 +327,10 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- BEGIN CONTENT -->
           <div class="col-md-12 col-sm-12">
             <h1>Tài khoản và mật khẩu</h1>
-            <!-- BEGIN CHECKOUT PAGE -->
+            <!-- BEGIN LOGIN PAGE -->
             <div class="panel-group checkout-page accordion scrollable" id="checkout-page">
 
-              <!-- BEGIN CHECKOUT -->
+              <!-- BEGIN LOGIN -->
               <div id="checkout" class="panel panel-default">
                 <div class="panel-heading">
                   <h2 class="panel-title">
@@ -359,13 +341,14 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 </div>
                 <div id="checkout-content" class="panel-collapse collapse in">
                   <div class="panel-body row">
-                    <div class="col-md-6 col-sm-6">
-                      <img src="img/img2.jpg" alt="image-background" class="background-login">
+                    <div class="col-md-6 col-sm-6">            
+                      <img src="<c:url value='/views/web/img/img2.jpg'/>" alt="image-background" class="background-login">
                     </div>
                     <div class="col-md-6 col-sm-6">
                       <h3>TRỞ THÀNH KHÁCH HÀNG TIỀM NĂNG.</h3>
                       <p>Hãy đăng nhập để nhiều hưởng quyền lợi từ cửa hàng chúng tôi</p>
-                      <form role="form" action="#">
+                      
+                      <!-- <form role="form" action="POST">
                         <div class="form-group">
                           <label for="email-login">Tài khoản</label>
                           <input type="text" id="email-login" class="form-control">
@@ -388,14 +371,42 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                             <li><a href="javascript:;" data-original-title="Linkedin" class="linkedin" title="LinkedIn"></a></li>
                           </ul>
                         </div>
+                      </form> -->
+                      
+                      
+                       <form action="#" method="POST" >
+                        <div class="form-group">
+                          <label for="email-login">Tài khoản</label>
+                          <input id ="username" type="text" name="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="password-login">Mật khẩu</label>
+                          <input id = "password" type="password" name="password" class="form-control">
+                        </div>
+                        <h5 style="text-align: left;color: red;">${message}</h5>
+                        Bạn đã có tài khoản chưa? Nếu chưa hãy bấm vào đây <a href="shop-sign-up.jsp">Đăng ký</a>
+                        <div class="padding-top-20">           
+                        <button class="btn btn-primary" type="submit">Login</button> 
+                        </div> 
+                        <hr>
+                        <div class="login-socio">
+                          <p class="text-muted">hoặc đăng nhập bằng:</p>
+                          <ul class="social-icons">
+                            <li><a href="javascript:;" data-original-title="facebook" class="facebook" title="facebook"></a></li>
+                            <li><a href="javascript:;" data-original-title="Twitter" class="twitter" title="Twitter"></a></li>
+                            <li><a href="javascript:;" data-original-title="Google Plus" class="googleplus" title="Google Plus"></a></li>
+                            <li><a href="javascript:;" data-original-title="Linkedin" class="linkedin" title="LinkedIn"></a></li>
+                          </ul>
+                        </div>
                       </form>
+                      
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- END CHECKOUT -->
+              <!-- END LOGIN -->
             </div>
-            <!-- END CHECKOUT PAGE -->
+            <!-- END LOGIN PAGE -->
           </div>
           <!-- END CONTENT -->
         </div>
@@ -505,11 +516,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- BEGIN PAYMENTS -->
           <div class="col-md-4 col-sm-4">
             <ul class="list-unstyled list-inline pull-right">
-              <li><img src="img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
-              <li><img src="img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
-              <li><img src="img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
-              <li><img src="img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
-              <li><img src="img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
+              <li><img src="<c:url value='/views/web/img/payments/western-union.jpg'/>" alt="We accept Western Union" title="We accept Western Union"></li>
+              <li><img src="<c:url value='/views/web/img/payments/american-express.jpg'/>" alt="We accept American Express" title="We accept American Express"></li>
+              <li><img src="<c:url value='/views/web/img/payments/MasterCard.jpg'/>" alt="We accept MasterCard" title="We accept MasterCard"></li>
+              <li><img src="<c:url value='/views/web/img/payments/PayPal.jpg'/>" alt="We accept PayPal" title="We accept PayPal"></li>
+              <li><img src="<c:url value='/views/web/img/payments/visa.jpg'/>" alt="We accept Visa" title="We accept Visa"></li>
             </ul>
           </div>
           <!-- END PAYMENTS -->

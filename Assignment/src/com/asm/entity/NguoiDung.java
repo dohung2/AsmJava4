@@ -111,7 +111,7 @@ public class NguoiDung implements Serializable {
 		this.matKhau = matKhau;
 	}
 
-	public boolean isVaiTro() {
+	public boolean getVaiTro() {
 		return vaiTro;
 	}
 

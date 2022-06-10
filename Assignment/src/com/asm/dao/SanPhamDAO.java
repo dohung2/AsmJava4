@@ -118,11 +118,11 @@ public class SanPhamDAO extends DAO<SanPham, String> {
 		return query.getResultList();
 	}
 	
-	public List<SanPham> findAllBySP(String tenDM, String loai){
+	public List<SanPham> findAllBySP(String id_DM, String loai){
     	EntityManager em = JpaUtils.getEntityManager();
-		String sql = "SELECT o FROM SanPham o WHERE o.tenDM	 = ?0 and o.loai = ?1";
+		String sql = "SELECT o FROM SanPham o WHERE o.id_DM	 = ?0 and o.loai = ?1";
 		TypedQuery<SanPham> query = em.createQuery(sql, SanPham.class);
-		query.setParameter(0, tenDM);
+		query.setParameter(0, id_DM);
 		query.setParameter(1, loai);
 		return query.getResultList();
     }

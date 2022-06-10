@@ -43,8 +43,7 @@ public class SanPhamController extends HttpServlet {
 			String maSP = req.getParameter("maSP");
 			doGetPopular(req, resp, maSP);
 			if (!StringUtils.isEmpty(maSP)) {
-				doGetSanPham(req, resp, maSP);
-				
+				doGetSanPham(req, resp, maSP);			
 			} else if (!StringUtils.isEmpty(tenDM)) {
 				doGetDanhMuc(req, resp, tenDM);
 			}
@@ -63,7 +62,7 @@ public class SanPhamController extends HttpServlet {
 	
 	protected void doGetPopular(HttpServletRequest req, HttpServletResponse resp, String maSP) throws ServletException, IOException {
 		SanPham sp = spDAO.selectById(maSP);
-		List<SanPham> listProduct = spDAO.findAllBySP(sp.getTenDM(), sp.getLoai());
+		List<SanPham> listProduct = spDAO.findAllBySP(sp.getId_DM(), sp.getLoai());
 		System.out.println(listProduct.size());
 		req.setAttribute("listProductPopular", listProduct);
 	}

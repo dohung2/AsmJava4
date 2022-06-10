@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -237,14 +239,26 @@
             <li><a href="<c:url value='/views/web/shop-about.jsp'/>">GIỚI THIỆU</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="shop-login.jsp">
-                TÀI KHOẢN
+                <c:choose>
+                	<c:when test="${not empty sessionScope.user}">${sessionScope.user.tenTK}</c:when>
+                	<c:otherwise>TÀI KHOẢN</c:otherwise>
+                </c:choose>
                 
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="<c:url value='/views/web/shop-login.jsp'/>">Đăng nhập</a></li>
-                <li><a href="<c:url value='/views/web/shop-account.jsp'/>">Thông tin tài khoản</a></li>
-                <li><a href="<c:url value='/views/web/shop-sign-up.jsp'/>">Đăng ký</a></li>
+              	<c:if test="${empty sessionScope.user}">
+                	<li><a href="${pageContext.request.contextPath}/sign-in">Đăng nhập</a></li>
+                </c:if>
+                
+                <c:if test="${not empty sessionScope.user}">
+                	<li><a href="<c:url value='/views/web/shop-account.jsp'/>">Thông tin tài khoản</a></li>
+                </c:if>
+                
+                <c:choose>
+                	<c:when test="${not empty sessionScope.user}"><li><a href="${pageContext.request.contextPath}/sign-out">Đăng xuất</a></li></c:when>
+                	<c:otherwise><li><a href="<c:url value='/views/web/shop-sign-up.jsp'/>">Đăng ký</a></li></c:otherwise>
+                </c:choose>
               </ul>
             </li>
             

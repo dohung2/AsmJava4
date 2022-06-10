@@ -15,7 +15,7 @@ import com.asm.dao.SanPhamDAO;
 import com.asm.entity.DanhMuc;
 import com.asm.entity.SanPham;
 
-@WebServlet({"/index", "/sign-in", "/sign-up", "/sign-out"})
+@WebServlet("/index")
 public class HomeController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
