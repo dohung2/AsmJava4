@@ -8,6 +8,7 @@ import javax.persistence.ParameterMode;
 import javax.persistence.StoredProcedureQuery;
 import javax.persistence.TypedQuery;
 
+import com.asm.entity.KichCo;
 import com.asm.entity.SanPham;
 import com.asm.util.JpaUtils;
 
@@ -81,8 +82,7 @@ public class SanPhamDAO extends DAO<SanPham, String> {
 	public List<SanPham> selectAll() {
 		// TODO Auto-generated method stub
 		EntityManager em = JpaUtils.getEntityManager();
-		String sql = "SELECT p FROM SanPham p";
-		TypedQuery<SanPham> query = em.createQuery(sql, SanPham.class);
+		TypedQuery<SanPham> query = em.createNamedQuery("SanPham.findAll", SanPham.class);
 		return query.getResultList();
 	}
 	
@@ -124,6 +124,14 @@ public class SanPhamDAO extends DAO<SanPham, String> {
 		TypedQuery<SanPham> query = em.createQuery(sql, SanPham.class);
 		query.setParameter(0, id_DM);
 		query.setParameter(1, loai);
+		return query.getResultList();
+    }
+	
+	public List<KichCo> findByKichCo(String id_SP){
+    	EntityManager em = JpaUtils.getEntityManager();
+		String sql = "SELECT s FROM KichCo s WHERE s.id_SP = ?0";
+		TypedQuery<KichCo> query = em.createQuery(sql, KichCo.class);
+		query.setParameter(0, id_SP);
 		return query.getResultList();
     }
 }

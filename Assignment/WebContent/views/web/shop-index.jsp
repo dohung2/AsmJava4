@@ -69,7 +69,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 	            
 	              <div>
 	                <div class="product-item">
-	                  <%-- <c:url value='img/products/Jordan-Flight-Heritage.jpg'/> --%>
  	                    <div class="pi-img-wrapper">
 	                      <img src="<c:url value='/views/web/img/products/${product.anh}'/>" class="img-responsive" alt="Berry Lace Dress">
 	                      <div>
@@ -80,7 +79,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 	                    
 	                    <h3><a href="<c:url value='/sanpham?maSP=${product.id_SP}'/>">${product.tenSP}</a></h3>
 	                    <div class="pi-price">
-	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" />
+	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span>
 	                    </div>
 	                    <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ</a>
 	            	</div>
@@ -121,7 +120,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 	                    
 	                    <h3><a href="<c:url value='/sanpham?maSP=${product.id_SP}'/>">${product.tenSP}</a></h3>
 	                    <div class="pi-price">
-	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" />
+	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span>
 	                    </div>
 	                    <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ</a>
 	            	</div>
@@ -156,7 +155,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 	                    
 	                    <h3><a href="<c:url value='/sanpham?maSP=${product.id_SP}'/>">${product.tenSP}</a></h3>
 	                    <div class="pi-price">
-	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" />
+	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span>
 	                    </div>
 	                    <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ</a>
 	                    <div class="sticker sticker-sale"></div>

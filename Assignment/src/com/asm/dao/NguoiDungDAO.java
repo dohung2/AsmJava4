@@ -65,20 +65,26 @@ public class NguoiDungDAO extends DAO<NguoiDung, String> {
 	@Override
 	public NguoiDung selectById(String key) {
 		// TODO Auto-generated method stub
-		//EntityManager em = JpaUtils.getEntityManager();
-//		NguoiDung entity = em.find(NguoiDung.class, key);
-//		return entity;
-		String jpql = "Select u from NguoiDung u where u.tenTK = :TenTK"; //u.tenTK => đặc tên thuộc tính class N.Dùng
+		String jpql = "Select u from NguoiDung u where u.id_KH = :id_KH"; //u.id_KH => đặc tên thuộc tính class N.Dùng
 		TypedQuery<NguoiDung> query = em.createQuery(jpql, NguoiDung.class);
-		query.setParameter("TenTK", key);
+		query.setParameter("id_KH", key);
 		return query.getSingleResult();
-		
+	}
+	
+	public NguoiDung selectByAccount(String key) {
+		// TODO Auto-generated method stub
+		String jpql = "Select u from NguoiDung u where u.tenTK = :tenTK";
+		TypedQuery<NguoiDung> query = em.createQuery(jpql, NguoiDung.class);
+		query.setParameter("tenTK", key);
+		return query.getSingleResult();
 	}
 
 	 @Override
 	public List<NguoiDung> selectAll() {
 		// TODO Auto-generated method stub
-		return null;
+		EntityManager em = JpaUtils.getEntityManager();
+		TypedQuery<NguoiDung> query = em.createNamedQuery("NguoiDung.findAll", NguoiDung.class);
+		return query.getResultList();
 	}
 
 

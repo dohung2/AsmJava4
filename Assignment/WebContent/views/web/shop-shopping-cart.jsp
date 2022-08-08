@@ -73,39 +73,45 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     <th class="goods-page-price">Giá</th>
                     <th class="goods-page-total" colspan="2">Tổng</th>
                   </tr>
-                  <tr>
+                  
+                  <c:forEach var="item" items="${cart}">
+	                  <tr>
+	                    <td class="goods-page-image">
+	                      <a href="javascript:;"><img src="<c:url value='views/web/img/products/${item.value.productSetBicture}'/>" alt="Image Product"></a>
+	                    </td>
+	                    <td class="goods-page-description">
+	                      <h3><a href="<c:url value='/sanpham?maSP=${cartDetail.value.id_SP}'/>">${item.value.productSetName}</a></h3>
+	                      <p><strong>${cartDetail.value.id_SP}</strong> - Màu: <strong>${cartDetail.value.mauSac}</strong>; Kích thước: <strong>Chưa làm</strong></p>
+	                      <em>Bấm vào tên sản phẩm để xem chi tiết</em>
+	                    </td>
+	                    <td class="goods-page-ref-no">
+	                      ${cartDetail.value.id_SP}
+	                    </td>
+	                    <td class="goods-page-quantity">
+	                      <div class="product-quantity" >
+	                          <input id="getCurrentQuantity" onchange="getMyQuantity('${item.value.productSetBroductID}','${item.value.productSetColor}',this)" type="text" value="${item.value.productSetQuantity}" readonly class="form-control input-sm">
+	                      </div>
+	                    </td>
+	                    <td class="goods-page-price">
+	                      <span id="totalSP-${cartDetail.value.id_SP}">
+	                      	<strong>${cartDetail.value.giasp}<span>đ</span></strong>
+						  </span>
+	                    </td>
+	                    <td class="goods-page-total">
+	                      <strong>${cartDetail.value.giasp * cartDetail.value.slMua}<span>đ</span></strong>
+	                    </td>
+	                    <td class="del-goods-col">
+	                      <a class="del-goods" onclick="removeSP('${cartDetail.value.id_SP}')" >&nbsp;</a>
+	                    </td>
+	                  </tr>
+                  </c:forEach>
+                  
+<!--                   <tr>
                     <td class="goods-page-image">
-                      <a href="javascript:;"><img src="img/products/Men's-Basketball-T-Shirt-Black.jpg" alt="Berry Lace Dress"></a>
+                      <a href="javascript:;"><img src="img/products/Ao-Hoodie-Lung-Black.jpg" alt="Berry Lace Dress"></a>
                     </td>
                     <td class="goods-page-description">
-                      <h3><a href="javascript:;">Men's Basketball T-Shirt Black</a></h3>
-                      <p><strong>SP1</strong> - Màu: <strong>Đen</strong>; Kích thước: <strong>S</strong></p>
-                      <em>Bấm vào sản phẩm để xem chi tiết</em>
-                    </td>
-                    <td class="goods-page-ref-no">
-                      NIKE001
-                    </td>
-                    <td class="goods-page-quantity">
-                      <div class="product-quantity">
-                          <input id="product-quantity" type="text" value="1" readonly class="form-control input-sm">
-                      </div>
-                    </td>
-                    <td class="goods-page-price">
-                      <strong>900.000<span>đ</span></strong>
-                    </td>
-                    <td class="goods-page-total">
-                      <strong>900.000<span>đ</span></strong>
-                    </td>
-                    <td class="del-goods-col">
-                      <a class="del-goods" href="javascript:;">&nbsp;</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="goods-page-image">
-                      <a href="javascript:;"><img src="img/products/Men's-Basketball-T-Shirt-White.jpg" alt="Berry Lace Dress"></a>
-                    </td>
-                    <td class="goods-page-description">
-                      <h3><a href="javascript:;">Men's Basketball T-Shirt White</a></h3>
+                      <h3><a href="javascript:;">Basketball T-Shirt White</a></h3>
                       <p><strong>SP2</strong> - Màu: <strong>Trắng</strong>; Kích thước: <strong>S</strong></p>
                       <em>Bấm vào sản phẩm để xem chi tiết</em>
                     </td>
@@ -126,7 +132,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     <td class="del-goods-col">
                       <a class="del-goods" href="javascript:;">&nbsp;</a>
                     </td>
-                  </tr>
+                  </tr> -->
+                  
                 </table>
                 </div>
 
@@ -134,7 +141,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   <ul>
                     <li>
                       <em>Tạm tính</em>
-                      <strong class="price">1.800.000<span>đ</span></strong>
+                      <strong class="price">900.000<span>đ</span></strong>
                     </li>
                     <li>
                       <em>Phí vận chuyển</em>
@@ -142,12 +149,13 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     </li>
                     <li class="shopping-total-price">
                       <em>Tổng tiền</em>
-                      <strong class="price">1.832.000<span>đ</span></strong>
+                      <%-- <strong class="price">${sessionScope.gioHang.tongtien}<span>đ</span></strong> --%>
+                      <strong class="price">932.000<span>đ</span></strong>
                     </li>
                   </ul>
                 </div>
               </div>
-              <button class="btn btn-default" type="submit">Tiếp tục mua sắm <i class="fa fa-shopping-cart"></i></button>
+              <a href="${pageContext.request.contextPath}/index" class="btn btn-default">Tiếp tục mua sắm <i class="fa fa-shopping-cart"></i></a>
               <button class="btn btn-primary" type="submit">Thanh toán <i class="fa fa-check"></i></button>
             </div>
           </div>
@@ -155,8 +163,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         </div>
         <!-- END SIDEBAR & CONTENT -->
 
-        <!-- BEGIN SIMILAR PRODUCTS -->
-        <div class="row margin-bottom-40">
+         <!-- BEGIN SIMILAR PRODUCTS -->
+        <!--<div class="row margin-bottom-40">
           <div class="col-md-12 col-sm-12">
             <h2>Sản phẩm phổ biến nhất</h2>
             <div class="owl-carousel owl-carousel4">
@@ -249,192 +257,14 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             </div>
           </div>
         </div>
-        <!-- END SIMILAR PRODUCTS -->
+        END SIMILAR PRODUCTS
       </div>
-    </div>
+    </div> -->
 
-    <!-- BEGIN STEPS -->
-    <div class="steps-block steps-block-red">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 steps-block-col">
-            <i class="fa fa-truck"></i>
-            <div>
-              <h2>Free shipping</h2>
-              <em>Miễn phí vận chuyển cho đơn hàng trên 1 triệu.</em>
-            </div>
-            <span>&nbsp;</span>
-          </div>
-          <div class="col-md-4 steps-block-col">
-            <i class="fa fa-gift"></i>
-            <div>
-              <h2>Daily Gifts</h2>
-              <em>Tặng quà hằng ngày cho những khách hàng may mắn</em>
-            </div>
-            <span>&nbsp;</span>
-          </div>
-          <div class="col-md-4 steps-block-col">
-            <i class="fa fa-phone"></i>
-            <div>
-              <h2>1900 259 360</h2>
-              <em>Dịch vụ chăm sóc khách hàng tận tình 24/7</em>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END STEPS -->
-
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-3 col-sm-6 pre-footer-col">
-            <h2>Giới thiệu</h2>
-            <p>Thành lập vào tháng 5 năm 2022, với mô hình kinh doanh: Siêu thị thời trang hạnh phúc dành cho mọi người, mọi nhà, Super Shop mong muốn người tiêu dùng không chỉ được trải nghiệm sản phẩm chất lượng, không gian mua sắm ấm áp như ở nhà mà họ còn cảm thấy tự hào và hạnh phúc với sản phẩm thời trang đến từ một thương hiệu thuần Việt.</p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
-          <!-- BEGIN BOTTOM INFO BLOCK -->
-          <div class="col-md-6 col-sm-6 pre-footer-col">
-            <h2>Địa chỉ</h2>
-            <label for="">Chi nhánh 1:</label>
-            <p>- 37 Đường Tôn Đức Thắng, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
-            <label for="">Chi nhánh 2:</label>
-            <p>- 87 Đường Trần Duy Hưng, Trung Hòa Nhân Chính, Trung Hoà, Cầu Giấy, Hà Nội</p>
-            <label for="">Chi nhánh 3:</label>
-            <p>- 510 Tôn Đức Thắng, Hoà Minh, Liên Chiểu, Đà Nẵng</p>
-          </div>
-          <!-- END INFO BLOCK -->
-          
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-3 col-sm-6 pre-footer-col">
-            <h2>Liên hệ</h2>
-            <address class="margin-bottom-40">
-              Phone 1: 1900 259 360<br>
-              Phone 2: 0333 444 556<br>
-              Facebook: <a href="#">https://www.facebook.com/h&m</a><br>
-              Email: <a href="#">h&m@gmail.com</a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
-        </div>
-        <hr>
-        <div class="row">
-          <!-- BEGIN SOCIAL ICONS -->
-          <div class="col-md-6 col-sm-6">
-            <ul class="social-icons">
-              <li><a class="facebook" data-original-title="facebook" href="javascript:;"></a></li>
-              <li><a class="twitter" data-original-title="twitter" href="javascript:;"></a></li>
-              <li><a class="googleplus" data-original-title="googleplus" href="javascript:;"></a></li>
-              <li><a class="linkedin" data-original-title="linkedin" href="javascript:;"></a></li>
-              <li><a class="youtube" data-original-title="youtube" href="javascript:;"></a></li>
-              <li><a class="skype" data-original-title="skype" href="javascript:;"></a></li>
-            </ul>
-          </div>
-          <!-- END SOCIAL ICONS -->
-          <!-- BEGIN NEWLETTER -->
-          <div class="col-md-6 col-sm-6">
-            <h2 class="footer-title">Hãy lựa chọn theo cách của bạn!</h2>
-          </div>
-          <!-- END NEWLETTER -->
-        </div>
-      </div>
-    </div>
-    <!-- END PRE-FOOTER -->
-
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-4 col-sm-4 padding-top-10">
-            2022 © HungNgoc. ALL Rights Reserved. 
-          </div>
-          <!-- END COPYRIGHT -->
-          <!-- BEGIN PAYMENTS -->
-          <div class="col-md-4 col-sm-4">
-            <ul class="list-unstyled list-inline pull-right">
-              <li><img src="img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
-              <li><img src="img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
-              <li><img src="img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
-              <li><img src="img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
-              <li><img src="img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
-            </ul>
-          </div>
-          <!-- END PAYMENTS -->
-          <!-- BEGIN POWERED -->
-          <div class="col-md-4 col-sm-4 text-right">
-            <p class="powered">Powered by: <a href="http://www.keenthemes.com/">KeenThemes.com</a></p>
-          </div>
-          <!-- END POWERED -->
-        </div>
-      </div>
-    </div>
-    <!-- END FOOTER -->
-
-    <!-- BEGIN fast view of a product -->
-    <div id="product-pop-up" style="display: none; width: 700px;">
-      <div class="product-page product-pop-up">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-3">
-            <div class="product-main-image">
-              <img src="img/products/Jordan-Flight-Heritage.jpg" alt="Cool green dress with red bell" class="img-responsive">
-            </div>
-            <div class="product-other-images">
-              <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="img/products/Jordan-Flight-Heritage.jpg"></a>
-              <a href="javascript:;"><img alt="Berry Lace Dress" src="img/products/Jordan-Flight-Heritage-1.jpg"></a>
-              <a href="javascript:;"><img alt="Berry Lace Dress" src="img/products/Jordan-Flight-Heritage-2.jpg"></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-9">
-            <h1>Cool green dress with red bell</h1>
-            <div class="price-availability-block clearfix">
-              <div class="price">
-                <strong><span>$</span>47.00</strong>
-                <em>$<span>62.00</span></em>
-              </div>
-              <div class="availability">
-                Trạng thái: <strong>Còn hàng</strong>
-              </div>
-            </div>
-            <div class="description">
-              <p>Lorem ipsum dolor ut sit ame dolore  adipiscing elit, sed nonumy nibh sed euismod laoreet dolore magna aliquarm erat volutpat 
-Nostrud duis molestie at dolore.</p>
-            </div>
-            <div class="product-page-options">
-              <div class="pull-left">
-                <label class="control-label">Size:</label>
-                <select class="form-control input-sm">
-                  <option>S</option>
-                  <option>M</option>
-                  <option>L</option>
-                </select>
-              </div>
-              <div class="pull-left">
-                <label class="control-label">Color:</label>
-                <select class="form-control input-sm">
-                  <option>Red</option>
-                  <option>Blue</option>
-                  <option>Black</option>
-                </select>
-              </div>
-            </div>
-            <div class="product-page-cart">
-              <div class="product-quantity">
-                  <input id="product-quantity" type="text" value="1" readonly name="product-quantity" class="form-control input-sm">
-              </div>
-              <button class="btn btn-primary" type="submit">Thêm vào giỏ</button>
-              <a href="shop-item.jsp" class="btn btn-default">Xem thêm</a>
-            </div>
-          </div>
-
-          <div class="sticker sticker-sale"></div>
-        </div>
-      </div>
-</div>
-    <!-- END fast view of a product -->
-
+	<!-- BEGIN FOOTER -->
+	<%@include file="common/footer.jsp"%>
+	<!-- END FOOTER -->
+	
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
@@ -459,6 +289,59 @@ Nostrud duis molestie at dolore.</p>
             Layout.initSliderRange();
         });
     </script>
+    
+    <!-- Script for add, update, remove cart-->
+    <script type="text/javascript">
+	//  $('#getCurrentQuantity').click(function(){
+	// 	 var currentQuantity = document.getElementById("getCurrentQuantity").value;
+	// 	 var id = "${item.value.productSetBroductID}";
+	// 	 var color = "${item.value.productSetColor}";
+		
+	// 	 window.location.href="Cart/UpdateQuantity?&getProductID=${item.value.productSetBroductID}&getProductColor=${item.value.productSetColor}&myCurrentQuantity="+currentQuantity;
+	//  	 window.location.href="Cart/UpdateQuantity?&getProductID='+id+'&getProductColor='+color+'&myCurrentQuantity="+currentQuantity;
+	//  })
+	 function getMyQuantity(id,color,obj){
+		var quantity = obj.value;
+	     $.ajax({
+	         url:'Cart/UpdateQuantity?&myCurrentQuantity='+quantity+'&getProductColor='+color+'&getProductID='+id,
+	         dataType:'json',
+	
+	         success: function(result){
+		          $('#lblCartCount').text(result.totalQuantity);
+	              $('#toTalDiscount').text(numberWithDot(result.totalDiscount));
+	              $('#toTalPrice').text(numberWithDot(result.totalPrice));
+	              $('#toTalPriceAfterDiscount').text(numberWithDot(result.totalPriceAfterDiscount));
+		            },
+		            error: function(result){
+		            	alert("fail!");
+		            }
+	     })
+	     console.log(quantity);
+	 }
+	 
+	 function removeSP(maSP,color){
+	     $.ajax({
+	         url:'Cart/RemoveFromCart?&productID='+maSP+'&colorPick='+color,
+	         dataType:'json',
+	
+	         success: function(result){
+		             $('#lblCartCount').text(result.totalQuantity);
+	                 var idRemoveTag = '#tr-'+maSP;
+	                 $(idRemoveTag).remove();
+	                 $('#toTalDiscount').text(numberWithDot(result.totalDiscount));
+	                 $('#toTalPrice').text(numberWithDot(result.totalPrice));
+	                 $('#toTalPriceAfterDiscount').text(numberWithDot(result.totalPriceAfterDiscount));
+		            },
+		            error: function(result){
+		            	alert("fail!");
+		            }
+	     })
+	 }
+	
+	function numberWithDot(x) {
+	    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".");
+	}
+	</script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
 <!-- END BODY -->

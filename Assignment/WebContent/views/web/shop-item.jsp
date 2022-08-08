@@ -57,9 +57,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="main">
       <div class="container">
         <ul class="breadcrumb">
-            <li><a href="shop-index.jsp">Trang chủ</a></li>
-            <li><a href="shop-product-list.jsp">Nam</a></li>
-            <li class="active">Cool green dress with red bell</li>
+            <li><a href="${pageContext.request.contextPath}/index">Trang chủ</a></li>
+			<!-- <li><a href="shop-product-list.jsp">Nam</a></li> -->
+            <li class="active">${product.tenSP}</li>
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
@@ -74,20 +74,27 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <div class="product-page">
               <div class="row">
                 <div class="col-md-6 col-sm-6">
+                
                   <div class="product-main-image">
-                  <%-- <c:url value='/views/web/img/products/${product.anh}'/> --%>
                     <img src="<c:url value='/views/web/img/products/${product.anh}'/>" alt="Cool green dress with red bell" class="img-responsive" data-BigImgsrc="<c:url value='/views/web/img/products/${product.anh}'/>">
                   </div>
+                  
+                  <!-- Ảnh sản phẩm kèm theo -->
                   <!-- <div class="product-other-images">
                     <a href="img/products/Jordan-Flight-Heritage-1.jpg" class="fancybox-button" rel="photos-lib"><img alt="Berry Lace Dress" src="img/products/Jordan-Flight-Heritage-1.jpg"></a>
                     <a href="img/products/Jordan-Flight-Heritage-2.jpg" class="fancybox-button" rel="photos-lib"><img alt="Berry Lace Dress" src="img/products/Jordan-Flight-Heritage-2.jpg"></a>
                   </div> -->
+                  
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <h1>${product.tenSP}</h1>
                   <div class="price-availability-block clearfix">
                     <div class="price">   
-                      <strong><fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" /><span>đ</span></strong>
+                      <address>
+						<input type="hidden" id="id_SP" value="${product.id_SP}"/>
+						<input type="hidden" id="soLuongTrongKho" value="${product.slTonKho}"/>
+					  </address>
+                      <strong><fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span></strong>
                       <%-- <em><span><fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" /></span>đ</em> --%>
                     </div>
                     <div class="availability">
@@ -112,25 +119,23 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                     <div class="pull-left">
                       <label class="control-label">Size:</label>
                       <select class="form-control input-sm">
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
+                      	<c:forEach var="size" items="${listSize}">
+                      		<option>${size.kichCo}</option>
+                      	</c:forEach>
                       </select>
                     </div>
                     <div class="pull-left">
                       <label class="control-label">Color:</label>
                       <select class="form-control input-sm">
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Black</option>
+                        <option>${product.mauSac}</option>
                       </select>
                     </div>
                   </div>
                   <div class="product-page-cart">
                     <div class="product-quantity">
-                        <input id="product-quantity" type="text" value="1" readonly class="form-control input-sm">
+                        <input id="soLuongMua" type="text" value="1" readonly class="form-control input-sm" min="1" max="${product.slTonKho}">
                     </div>
-                    <button class="btn btn-primary" type="submit">Thêm vào giỏ hàng</button>
+                    <button class="btn btn-primary" id="addToCart" type="button">Thêm vào giỏ hàng</button>
                   </div>
                   <div class="review">
                     <input type="range" value="4" step="0.25" id="backing4">
@@ -271,7 +276,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 	                    
 	                    <h3><a href="<c:url value='/sanpham?maSP=${product.id_SP}'/>">${product.tenSP}</a></h3>
 	                    <div class="pi-price">
-	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia}" />
+	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span>
 	                    </div>
 	                    <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ</a>
 	                    <!-- <div class="sticker sticker-sale"></div> -->
@@ -307,6 +312,29 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             Layout.initUniform();
         });
     </script>
+    
+    <script>
+    	$('#addToCart').click(function() {
+    		var maSP = $('#id_SP').val();
+    		var soLuongMua = parseInt($('#soLuongMua').val());
+    		var soLuongTrongKho = parseInt($('#soLuongTrongKho').val());
+    		
+    		if (soLuongMua > soLuongTrongKho || soLuongMua < 1) {
+    			alert('Kiểm tra lại số lượng');
+    		} else {
+    			$.ajax({
+        	        url: 'cart?action=add&maSP=' + maSP + '&soluong=' + soLuongMua + '&isUpdate=0',
+        	        dataType : 'json'
+        	    }).then(function(data) {
+        	    	alert('Thêm thành công vào giỏ hàng!');
+        	    	$('#countTotal').text(data.tongsl);
+        	    }).fail(function(error) {
+        	    	alert('Thêm thất bại, vui lòng thử lại!');
+        	    });
+    		}
+    	})
+    </script>
+    
     <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
 <!-- END BODY -->

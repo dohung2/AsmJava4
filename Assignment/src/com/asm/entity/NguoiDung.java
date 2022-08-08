@@ -5,17 +5,20 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="NguoiDung")
+@NamedQuery(name="NguoiDung.findAll", query="SELECT u FROM NguoiDung u")
 public class NguoiDung implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(name="ID_KH")
-	private String id_KH;
+	private String id_KH = "";
 	
 	@Column(name="HoTen")
 	private String hoTen;

@@ -56,11 +56,11 @@ public class LoginController extends HttpServlet {
 
 	private void doSignIn(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
-				String id = req.getParameter("username");
+				String tk = req.getParameter("username");
 				String pw = req.getParameter("password");
 				
 				NguoiDungDAO dao = new NguoiDungDAO();
-				NguoiDung user = dao.selectById(id);
+				NguoiDung user = dao.selectByAccount(tk);
 				if (!user.getMatKhau().equals(pw)) {
 				/* req.setAttribute("message", "Sai mật khẩu!"); */
 					req.getSession().setAttribute("message", "Sai mật khẩu!");

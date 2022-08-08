@@ -76,6 +76,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   <em>630.000đ</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
+                
                 <!-- <li>
                   <a href="shop-item.jsp"><img src="img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
@@ -90,6 +91,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   <em>630.000đ</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li> -->
+                
               </ul>
               <div class="text-right">          
                 <a href="<c:url value='/views/web/shop-shopping-cart.jsp'/>" class="btn btn-default">Xem giỏ</a>
@@ -115,42 +117,42 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày bóng rổ</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Boots</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày lười</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Golf Shoes</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày bóng rổ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Boots</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày lười</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Golf Shoes</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Thắt lưng</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nón lưỡi trai</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Thắt lưng</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nón lưỡi trai</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
@@ -173,43 +175,43 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cao gót</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày búp bê và mọi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Oxford & boot</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sandal</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cao gót</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày búp bê và mọi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Oxford & boot</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sandal</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Túi xách</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nước hoa</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Son môi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>                          
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Túi xách</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nước hoa</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Son môi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>                          
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
@@ -232,42 +234,42 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày bóng rổ</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Boots</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày lười</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Golf Shoes</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày bóng rổ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Boots</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày lười</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Golf Shoes</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Thắt lưng</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nón lưỡi trai</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Thắt lưng</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nón lưỡi trai</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
@@ -281,14 +283,26 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <li><a href="<c:url value='/views/web/shop-about.jsp'/>">GIỚI THIỆU</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="shop-login.jsp">
-                TÀI KHOẢN
+                <c:choose>
+                	<c:when test="${not empty sessionScope.user}">${sessionScope.user.tenTK}</c:when>
+                	<c:otherwise>TÀI KHOẢN</c:otherwise>
+                </c:choose>
                 
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="<c:url value='/views/web/shop-login.jsp'/>">Đăng nhập</a></li>
-                <li><a href="<c:url value='/views/web/shop-account.jsp'/>">Thông tin tài khoản</a></li>
-                <li><a href="<c:url value='/views/web/shop-sign-up.jsp'/>">Đăng ký</a></li>
+              	<c:if test="${empty sessionScope.user}">
+                	<li><a href="${pageContext.request.contextPath}/sign-in">Đăng nhập</a></li>
+                </c:if>
+                
+                <c:if test="${not empty sessionScope.user}">
+                	<li><a href="<c:url value='/views/web/shop-account.jsp'/>">Thông tin tài khoản</a></li>
+                </c:if>
+                
+                <c:choose>
+                	<c:when test="${not empty sessionScope.user}"><li><a href="${pageContext.request.contextPath}/sign-out">Đăng xuất</a></li></c:when>
+                	<c:otherwise><li><a href="<c:url value='/views/web/shop-sign-up.jsp'/>">Đăng ký</a></li></c:otherwise>
+                </c:choose>
               </ul>
             </li>
             
@@ -318,7 +332,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 
     <div class="title-wrapper">
       <div class="container"><div class="container-inner">
-        <h1><span>MEN</span> CATEGORY</h1>
+        <h1><span>SHOP'S</span> CATEGORY</h1>
         <em>Over 4000 Items are available here</em>
       </div></div>
     </div>
@@ -334,50 +348,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- BEGIN SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-            	<c:forEach var="category" items="${listCategory}">
-					<li><a href="<c:url value='/sanpham?maDM=${category.madm}'/>">${category.tendanhmuc}</a></li>
-				</c:forEach>
-            
-            
-              <!-- <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Ladies</a></li>
-              <li class="list-group-item clearfix dropdown active">
-                <a href="javascript:void(0);" class="collapsed">
-                  <i class="fa fa-angle-right"></i>
-                  Mens
-                  
-                </a>
-                <ul class="dropdown-menu" style="display:block;">
-                  <li class="list-group-item dropdown clearfix active">
-                    <a href="javascript:void(0);" class="collapsed"><i class="fa fa-angle-right"></i> Shoes </a>
-                      <ul class="dropdown-menu" style="display:block;">
-                        <li class="list-group-item dropdown clearfix">
-                          <a href="javascript:void(0);"><i class="fa fa-angle-right"></i> Classic </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Classic 1</a></li>
-                            <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Classic 2</a></li>
-                          </ul>
-                        </li>
-                        <li class="list-group-item dropdown clearfix active">
-                          <a href="javascript:void(0);" class="collapsed"><i class="fa fa-angle-right"></i> Sport  </a>
-                          <ul class="dropdown-menu" style="display:block;">
-                            <li class="active"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Sport 1</a></li>
-                            <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Sport 2</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                  </li>
-                  <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Trainers</a></li>
-                  <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Jeans</a></li>
-                  <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Chinos</a></li>
-                  <li><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> T-Shirts</a></li>
-                </ul>
-              </li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Kids</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Accessories</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Sports</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Brands</a></li> -->
+              <c:forEach var="category" items="${listCategory}">
+				<li class="list-group-item clearfix"><a href="<c:url value='/sanpham?id_DM=${category.id_DM}'/>"><i class="fa fa-angle-right"></i>${category.tenDM}</a></li>
+			  </c:forEach>
             </ul>
-
+		 
             <div class="sidebar-filter margin-bottom-25">
               <h2>Filter</h2>
               <h3>Sản phẩm</h3>
@@ -448,164 +423,35 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 </div>
               </div>
             </div>
+            
             <!-- BEGIN PRODUCT LIST -->
             <div class="row product-list">
-              <!-- PRODUCT ITEM START -->
-              1
-              <c:forEach var="product" items="${listProduct}">
-	              <div class="col-md-4 col-sm-6 col-xs-12">
+              <!-- PRODUCT ITEM START -->   
+                  
+                <c:forEach var="product" items="${listProduct}">
+                  <div class="col-md-4 col-sm-6 col-xs-12">
 	                <div class="product-item">
 	                  <div class="pi-img-wrapper">
-	                  <c:url value=""></c:url>
-	                    <img src="img/products/Jordan-Flight-Heritage.jpg" class="img-responsive" alt="Berry Lace Dress">
-	                    <div>
-	                      <a href="img/products/Jordan-Flight-Heritage.jpg" class="btn btn-default fancybox-button">Zoom</a>
-	                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+	                      <img src="<c:url value='/views/web/img/products/${product.anh}'/>" class="img-responsive" alt="Berry Lace Dress">
+	                      <div>
+	                        <a href="<c:url value='/views/web/img/products/${product.anh}'/>" class="btn btn-default fancybox-button">Zoom</a>
+	                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+	                      </div>
 	                    </div>
-	                  </div>
-	                  <h3><a href="shop-item.jsp">Berry Lace Dress Berry Lace Dress</a></h3>
-	                  <div class="pi-price">$29.00</div>
-	                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+	                    
+	                    <h3><a href="<c:url value='/sanpham?maSP=${product.id_SP}'/>">${product.tenSP}</a></h3>
+	                    <div class="pi-price">
+	                    	<fmt:formatNumber type="number" maxFractionDigits="3" value="${product.gia*1000}" /><span>đ</span>
+	                    </div>
+	                    <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ</a>
 	                </div>
-	              </div>
-	          </c:forEach> 
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Men's-Basketball-T-Shirt-Black.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                      <a href="img/products/Men's-Basketball-T-Shirt-Black.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div> -->
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Men's-Basketball-T-Shirt-White.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                      <a href="img/products/Men's-Basketball-T-Shirt-White.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress 2</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>   -->            
-              <!-- PRODUCT ITEM END -->
-            </div>
-             <div class="row product-list">
-              <!-- PRODUCT ITEM START -->
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Nike-Sportswear-Black.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Nike-Sportswear-Black.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div> 
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Nike-Dri-FIT-Sport-Clash-Black.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Nike-Dri-FIT-Sport-Clash-Black.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  <div class="sticker sticker-new"></div>
-                </div>
-              </div> -->
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Jordan-Flight-Heritage-1.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Jordan-Flight-Heritage-1.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>    -->           
-              <!-- PRODUCT ITEM END -->
-            </div>
-            <div class="row product-list">
-              <!-- PRODUCT ITEM START -->
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Men's-Basketball-T-Shirt-Black.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Men's-Basketball-T-Shirt-Black.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Jordan-Flight-Heritage.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Jordan-Flight-Heritage.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div> -->
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="img/products/Nike-Dri-FIT-Sport-Clash-Black.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="img/products/Nike-Dri-FIT-Sport-Clash-Black.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.jsp">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  <div class="sticker sticker-sale"></div>
-                </div>
-              </div> -->
+	              </div> 
+	            </c:forEach>
+	                     
               <!-- PRODUCT ITEM END -->
             </div>
             <!-- END PRODUCT LIST -->
+            
             <!-- BEGIN PAGINATOR -->
             <div class="row">
               <div class="col-md-4 col-sm-4 items-info">Items 1 to 9 of 10 total</div>

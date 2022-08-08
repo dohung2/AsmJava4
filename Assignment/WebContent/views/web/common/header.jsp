@@ -19,8 +19,8 @@
         <!-- BEGIN CART -->
         <div class="top-cart-block">
           <div class="top-cart-info">
-            <a href="javascript:void(0);" class="top-cart-info-count">3 sản phẩm</a>
-            <a href="javascript:void(0);" class="top-cart-info-value">1260đ</a>
+            <a href="javascript:void(0);" class="top-cart-info-count"><span id="countTotal">${sessionScope.cart.tongsl}</span> sản phẩm</a>
+            <a href="javascript:void(0);" class="top-cart-info-value">900.000đ</a>
           </div>
           <i class="fa fa-shopping-cart"></i>
                         
@@ -30,8 +30,8 @@
                 <li>
                   <a href="<c:url value='/views/web/shop-item.jsp'/>"><img src="<c:url value='/views/web/img/cart-img.jpg'/>" alt="Rolex Classic Watch" width="37" height="34"></a>
                   <span class="cart-content-count">x 1</span>
-                  <strong><a href="<c:url value='/views/web/shop-item.jsp'/>">Rolex Classic Watch</a></strong>
-                  <em>630.000đ</em>
+                  <strong><a href="<c:url value='/views/web/shop-item.jsp'/>">Basketball T-Shirt White</a></strong>
+                  <em>900.000đ</em>
                   <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                 </li>
                 <!-- <li>
@@ -50,7 +50,7 @@
                 </li> -->
               </ul>
               <div class="text-right">          
-                <a href="<c:url value='/views/web/shop-shopping-cart.jsp'/>" class="btn btn-default">Xem giỏ</a>
+                <a href="<c:url value='/cart?action=view'/>" class="btn btn-default">Xem giỏ</a>
                 <a href="<c:url value='/views/web/shop-checkout.jsp'/>" class="btn btn-primary">Thanh toán</a>
               </div>
             </div>
@@ -73,42 +73,42 @@
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày bóng rổ</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Boots</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày lười</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Golf Shoes</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày bóng rổ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Boots</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày lười</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Golf Shoes</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Thắt lưng</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nón lưỡi trai</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Thắt lưng</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nón lưỡi trai</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
@@ -131,43 +131,43 @@
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cao gót</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày búp bê và mọi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Oxford & boot</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sandal</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cao gót</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày búp bê và mọi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Oxford & boot</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sandal</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Túi xách</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nước hoa</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Son môi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>                          
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Túi xách</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nước hoa</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Son môi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>                          
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">
@@ -190,42 +190,42 @@
                       <div class="col-md-4 header-navigation-col">
                         <h4>Giày</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sneaker</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày bóng rổ</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Boots</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày lười</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày đá banh</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Golf Shoes</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Giày cổ cao</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Dép</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sneaker</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày bóng rổ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Boots</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày lười</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày đá banh</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Golf Shoes</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Giày cổ cao</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Dep'/>">Dép</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Quần áo</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo hoodie</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo khoát</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo phông</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo polo</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Áo sơ mi</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần short</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jogger</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Quần jeans</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo hoodie</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo khoát</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo phông</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo polo</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Áo sơ mi</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần short</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jogger</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Quan'/>">Quần jeans</a></li>
                         </ul>
                       </div>
                       <div class="col-md-4 header-navigation-col">
                         <h4>Phụ kiện</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Thắt lưng</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Nón lưỡi trai</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Găng tay</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Vớ</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Thắt lưng</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Nón lưỡi trai</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Găng tay</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=PhuKien'/>">Vớ</a></li>
                         </ul>
 
                         <h4>Sản phẩm</h4>
                         <ul>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm mới</a></li>
-                          <li><a href="<c:url value='/views/web/shop-product-list.jsp'/>">Sản phẩm đang sale</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Giay'/>">Sản phẩm mới</a></li>
+                          <li><a href="<c:url value='/sanpham?id_DM=Ao'/>">Sản phẩm đang sale</a></li>
                         </ul>
                       </div>
                       <div class="col-md-12 nav-brands">

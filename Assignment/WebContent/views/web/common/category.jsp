@@ -10,17 +10,8 @@
 		  <div class="sidebar col-md-3 col-sm-4">
             <ul class="list-group margin-bottom-25 sidebar-menu">
               <c:forEach var="category" items="${listCategory}">
- 				<%-- <li><a href="<c:url value='/sanpham?maDM=${category.madm}'/>">${category.tenDanhMuc}</a></li> --%>
-				<li class="list-group-item clearfix"><a href="<c:url value='/sanpham?maDM=${category.id_DM}'/>"><i class="fa fa-angle-right"></i>${category.tenDM}</a></li>
+				<li class="list-group-item clearfix"><a href="<c:url value='/sanpham?id_DM=${category.id_DM}'/>"><i class="fa fa-angle-right"></i>${category.tenDM}</a></li>
 			  </c:forEach>
-			  
-<!--                <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Adidas</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Nike</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Puma</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> LouisV</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Hermes</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Gucci</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.jsp"><i class="fa fa-angle-right"></i> Dior</a></li> -->
             </ul>
           </div>
 

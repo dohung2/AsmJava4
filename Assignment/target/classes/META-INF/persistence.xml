@@ -10,7 +10,7 @@
 		<property name="javax.persistence.jdbc.url"
 				value="jdbc:sqlserver://localhost;database=ASM_JAVA4" />
 		<property name="javax.persistence.jdbc.user" value="sa" />
-		<property name="javax.persistence.jdbc.password" value="4864" />
+		<property name="javax.persistence.jdbc.password" value="12345" />
 		<property name="hibernate.show_sql" value="true" />
 		<property name="hibernate.format_sql" value="true" />
 		</properties>

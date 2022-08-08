@@ -8,18 +8,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="SanPham")
+@NamedQuery(name="SanPham.findAll", query="SELECT p FROM SanPham p")
 public class SanPham implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(name = "ID_SP")
-	private String id_SP;
+	private String id_SP = "";
 	
 	@Column(name = "TenSP")
 	private String tenSP;
